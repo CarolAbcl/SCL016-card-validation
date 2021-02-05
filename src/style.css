@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-color:#ACC1E2;
+    height: 70px;
+    width: 100%;
+    font-family: Roboto;
+    padding-left: 30px; 
+    line-height: 70px;
+}
+
+main{
+    padding-left: 30px;
+}
+
+.containerTitle{
+    float: left;
+    width: 530px;
+    height: calc(90px - 30px);
+    background-color: #E4EAF3;
+    color: #5C5656;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.start {
+float: left;
+padding-left: 30px;
+height: 60px;
+line-height: 80px;
+}
+
+.clearfix {
+    clear:both;
+}
+
+form input[type="text"] {
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form label{
+text-align: left;
+width: 180px;
+margin-bottom: 20px;
+display: inline-block;
+}
+
+#agreeline{
+    padding-left: 10px;
+    width: 500px;
+    text-align: left;
+}
+.selectCard {
+    width: fit-content;
+    padding-right: 10px;
+}
+
+#buttonSubmit{
+    background-color:#ACC1E2;
+    height: 42px;
+    width: 193px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+footer{
+    
+    background-color: #E4EAF3;
+    border-top: 5px solid #A96FD7;
+}
+
+.footerone {
+    float: left;
+    height: 50px;
+    width: 257px;
+    font-family: Roboto;
+    padding-left: 30px;
+}
+
+.footertwo {
+    height: 50px;
+    float: left;
+    font-family: Roboto;
+    font-size: 10px; 
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+form{
+    padding-top: 40px;
+}
