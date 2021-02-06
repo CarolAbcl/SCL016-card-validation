@@ -42,13 +42,14 @@
     <label class="selectCard" for="other">Otra</label><br>
     <!--input a validar-->
     <label for="numberCard">Numero de Tarjeta:</label>
-    <input type="number" required><br>
+    <input type="number" id="numberCard" required onblur="myFunction()">
+    <p id="alertInvalid" style="display:none">Tarjeta Invalida</p><br>
     <label>Vencimiento Tarjeta:</label>
     <label class="selectCard" for="monthE">Mes:</label>
     <input type="number" max="2"> 
     <label class="selectCard" for="yearE">Año:</label>
     <input type="number"><br>
-    <p>Monto de Cargo Mensual: $9.990</p><br>
+    <p>Monto de Cargo Mensual: <span>$9.990</span></p><br>
     <div class="copyright">
     <input type="checkbox" id="agree" name="agree" required>
     <label id="agreeline" for="agree">He leido los <a href="#">términos y condiciones</a> y acepto los cargos a realizar.</label><br>
@@ -71,6 +72,6 @@
         <p>Sitio creado por TryBank, todos los derechos reservados</p>
       </div>
     </footer>
-    <script src="index.js" type="module"></script>
+    <script src="pruebas.js"></script>
   </body>
 </html>

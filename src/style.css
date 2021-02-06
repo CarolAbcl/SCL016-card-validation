@@ -80,6 +80,7 @@ footer{
     width: 257px;
     font-family: Roboto;
     padding-left: 30px;
+    margin-top: 5px;
 }
 
 .footertwo {
@@ -87,6 +88,7 @@ footer{
     float: left;
     font-family: Roboto;
     font-size: 10px; 
+    margin-top: 15px;
 }
 
 .copyright{
@@ -96,5 +98,5 @@ footer{
 }
 
 form{
-    padding-top: 40px;
+    padding-top: 30px;
 }
