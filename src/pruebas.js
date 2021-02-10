@@ -1,14 +1,13 @@
 function myFunction() {
-    //let alertCard = "Tarjeta Valida";
-    //document.getElementById('alertCard').style.display='block';
     document.getElementById("alertCard").innerHTML = "Tarjeta Valida";
     let creditCardNumber = document.getElementById("numberCard").value;
     console.log(creditCardNumber);
-    let largo = creditCardNumber.length - 4;
-    console.log(largo);
+    let long = creditCardNumber.length - 4;
+    console.log(long);
     let last4 = creditCardNumber.substring(creditCardNumber.length -4);
     let result = ""; 
-   for (let tap = 1; tap <= largo; tap ++){
+    //bucle para tapar los numeros de la tarjeta menos los ultimos 4
+   for (let mask = 1; mask <= long; mask ++){
      result += "#";
     }
     console.log(result + last4);
