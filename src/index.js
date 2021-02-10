@@ -7,12 +7,18 @@ function myFunction() {
       alert("debe ingresar un numero");
       document.getElementById("alertCard").innerHTML = "Debe ingresar un número";
       document.getElementById("numberCard").value="";
-    }
+        }
     else{
-    let resultado = validator.maskify (creditCardNumber);
-    console.log(validator.isValid (creditCardNumber));
-    document.getElementById("numberCard").value = resultado;
-    document.getElementById("alertCard").innerHTML = resultado;
+            let validacion = validator.isValid (creditCardNumber);
+            console.log(validacion);
+            if (validacion == true){
+            document.getElementById("alertCard").innerHTML = "Tarjeta Valida";
+            }
+            else{
+            document.getElementById("alertCard").innerHTML = "Tarjeta Invalida";
+            }
+            let resultado = validator.maskify (creditCardNumber);
+            document.getElementById("numberCard").value = resultado;
     }
 
 }
