@@ -4,16 +4,16 @@ const validator = {
     // se genera un arreglo desde la cadena y se reversa
     let nuevo = creditCardNumber.split("");
     nuevo = nuevo.reverse();
-    console.log(nuevo);
+    //console.log(nuevo);
     //se convierten los datos del arreglo a numeros
     let sizeArray = nuevo.length - 1;
-    console.log (sizeArray); 
+    //console.log (sizeArray); 
     let i = 0;
       for (i = 0; i <= sizeArray; i++){
       let enNumero=parseInt(nuevo[i],10);
       nuevo.splice(i,1,enNumero);
       }
-      console.log(nuevo);
+      //console.log(nuevo);
       let double = [];
       for ( i = 0; i <= sizeArray; i++){
       if (i % 2 == 0){
@@ -36,25 +36,25 @@ const validator = {
       for (i = 0; i <= sizeArray; i++){
         suma += double[i];
       }
-      console.log(suma);
+      //console.log(suma);
     let cardStatus = false;
-        if (suma % 10 == 0){
+        if ((suma != 0) && (suma % 10 == 0)){
         cardStatus=true;
         }
-        console.log(cardStatus);
+        //console.log(cardStatus);
     return cardStatus;
   },
   //metodo para enmascarar tarjetas
   maskify (creditCardNumber) {
       let long = creditCardNumber.length - 4;
-      console.log(long);
+      //console.log(long);
       let last4 = creditCardNumber.substring(creditCardNumber.length -4);
       let result = ""; 
       //bucle para tapar los numeros de la tarjeta menos los ultimos 4
         for (let mask = 1; mask <= long; mask ++){
         result += "#";
         }
-      console.log(result + last4);
+      //console.log(result + last4);
       return result + last4;
     } 
   }

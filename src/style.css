@@ -2,18 +2,20 @@
     margin: 0%;
     padding: 0%;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 header {
     background-color:#ACC1E2;
     height: 70px;
     width: 100%;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     padding-left: 30px; 
     line-height: 70px;
 }
 
 main{
     padding-left: 30px;
+    font-size: 14px;
 }
 
 .containerTitle{
@@ -31,6 +33,7 @@ float: left;
 padding-left: 30px;
 height: 60px;
 line-height: 80px;
+font-size: 14px;
 }
 
 .clearfix {
@@ -40,13 +43,14 @@ line-height: 80px;
 form input[type="text"] {
     width: 500px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 
 form label{
 text-align: left;
 width: 180px;
-margin-bottom: 20px;
+margin-top: 20px;
+margin-bottom: px;
 display: inline-block;
 }
 
@@ -60,12 +64,21 @@ display: inline-block;
     padding-right: 10px;
 }
 
+#alertCard{
+    margin-top: 5px;
+    margin-left: 185px;
+    font-family:'Roboto Bold 700', 'sans-serif' ;
+    color: red;
+}
+
+
 #buttonSubmit{
     background-color:#ACC1E2;
     height: 42px;
     width: 193px;
     border-radius: 5px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 footer{
