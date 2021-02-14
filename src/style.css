@@ -28,6 +28,18 @@ main{
     padding-top: 30px;
 }
 
+.triangle{
+    width: 0;
+    height: 0;
+    border-right: 50px solid;
+    border-left: 0px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-top: 40px solid transparent;
+    position: absolute;
+    margin-left: 510px;
+    color: white;
+}
+
 .start {
 float: left;
 padding-left: 30px;
