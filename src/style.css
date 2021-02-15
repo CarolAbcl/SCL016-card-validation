@@ -7,7 +7,7 @@
 header {
     background-color:#ACC1E2;
     height: 70px;
-    width: 100%;
+    width: calc (100% - 30px);
     font-family: 'Roboto', sans-serif;
     padding-left: 30px; 
     line-height: 70px;
@@ -16,6 +16,7 @@ header {
 main{
     padding-left: 30px;
     font-size: 14px;
+    min-height: 480;
 }
 
 .containerTitle{
@@ -55,7 +56,6 @@ font-size: 14px;
 form input[type="text"] {
     width: 500px;
     margin-top: 10px;
-    /*margin-bottom: 10px;*/
 }
 
 form label{
@@ -76,6 +76,11 @@ display: inline-block;
     padding-right: 10px;
 }
 
+#price{
+    font-family: 'Roboto 400', sans-serif;
+    font-size: 20px;
+}
+
 #alertCard{
     margin-top: 5px;
     margin-left: 185px;
@@ -83,6 +88,13 @@ display: inline-block;
     color: red;
 }
 
+article{
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    color:#413e3e;
+}
 
 #buttonSubmit{
     background-color:#ACC1E2;
@@ -93,8 +105,14 @@ display: inline-block;
     margin-top: 20px;
 }
 
+#buttonSubmit:hover{
+    background-color: #7094ce;
+}
+
 footer{
-    
+    width: 100%;
+   /* bottom: 0%;*/
+    /*position: absolute;*/
     background-color: #E4EAF3;
     border-top: 5px solid #A96FD7;
 }

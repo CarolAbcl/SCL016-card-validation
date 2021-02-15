@@ -1,9 +1,9 @@
-# Tarjeta de crédito válida
+# Formulario para suscripción a servicios (con validación de tarjetas de crédito)
 
 ## Índice
 
 * [1. Prototipo](#1-prototipo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
+* [2. Insumos y Testeo](#2-insumos-y-testeo)
 
 ***
 
@@ -12,16 +12,20 @@
 Actualmente es muy comun la suscripción a distintos productos o servicios vía internet, para ello usualmemte nos piden tarjeta de credito como opción de pago. En Chile existe un servicio de Transbank, llamado transdata, donde se cargan los datos de las personas para hacerles el cargo con pago automatico. Esto funciona a traves de un formulario, el cual será utilizado como base donde se incorporará el sistema de validación de tarjetas desarrollado.
 
 * Usuarios
-Por una parte tenemos a los oferentes de productos y servicios por suscripción quienes le harán llegar el formulario a sus clientes. Siendo estos los usuarios finales, quienes completarán el formulario y podrán validar inmediatamente si su numero de tarjeta quedó bien ingresado.
+Por una parte tenemos a los oferentes de productos y servicios por suscripción quienes le harán llegar el formulario a sus clientes mediante un enlace. Siendo estos los usuarios finales, quienes completarán el formulario y podrán validar inmediatamente si su numero de tarjeta quedó bien ingresado.
 
 * Objetivos de estos usuarios en relación al sistema.
 Los usuarios quieren completar los datos correctamente para acceder a los productos y servicios por suscripción. Y los oferentes desean validar los datos para que no haya problema con los cobros.
 
-* Cómo crees que el producto que estás creando está resolviendo sus problemas.
+Este sistema genera un ingreso más limpio y actualizado de los datos, más fácil de enviar. Mejora aspectos como la legibilidad, ya que, cada dato va en su campo y valida instantaneamente los input para evitar inconvenientes posteriores. 
 
+## Insumos y Testeo
+Formulario frecuentemente utilizado para iiciar cargo automatico de tarjetas:
+![Formulario Análogo](/FormAnalogo.jpg)
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+Formulario diseñado en Figma:
+![Formulario Figma](/FormAnalogo.jpg)
 
-[![tips credit card](https://img.youtube.com/vi/f0zL6Ot9y_w/0.jpg)](https://www.youtube.com/watch?v=f0zL6Ot9y_w)
+Para los usuarios le pareció más amigable y entendible la versión prototipada que el formulario análogico. Les agradaba que fuera simple, formal y con colores claros. Me dieron indicaciones sobre el tipo de letra y tamaño. 
 
 [Link](https://www.youtube.com/watch?v=f0zL6Ot9y_w)

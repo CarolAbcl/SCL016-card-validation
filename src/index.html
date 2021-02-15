@@ -13,7 +13,7 @@
           <p>INSTRUCCIONES DE PAGO AUTOMATICO</p>
           <p>CON TARJETAS DE CRÉDITO (PAT)</p>
     </div>
-    <div class=triangle></div>
+    <div class="triangle"></div>
     <div class="start">
       <label for="start">Fecha Otorgamiento Instrucción de Cargo:</label>
       <input type="date" id="start" name="card-start">
@@ -48,14 +48,16 @@
     <!--fin validación-->
     <label>Vencimiento Tarjeta:</label>
     <label class="selectCard" for="monthE">Mes:</label>
-    <input type="number" max="2"> 
+    <input type="number"> 
     <label class="selectCard" for="yearE">Año:</label>
     <input type="number"><br><br>
-    <p id="price">Monto de Cargo Mensual: <span>$9.990</span></p><br>
+    <label>Monto de Cargo Mensual:</label>
+    <span id="price">$9.990</span><br>
     <div class="copyright">
     <input type="checkbox" id="agree" name="agree" required>
-    <label id="agreeline" for="agree">He leido los <a href="#">términos y condiciones</a> y acepto los cargos a realizar.</label><br>
-    <input id="buttonSubmit" type="submit" value="ENVIAR"> 
+    <label id="agreeline" for="agree">He leido los <a href="term_conditions.html">términos y condiciones</a> y acepto los cargos a realizar.</label><br>
+    <button type="submit" id="buttonSubmit">ENVIAR</button> 
+    <!--<input id="buttonSubmit" type="button">-->  
   </div>
   </form>
 </main>

@@ -2,7 +2,7 @@ import validator from './validator.js';
 document.getElementById("numberCard").addEventListener("blur", myFunction);
 function myFunction() {
     let creditCardNumber = document.getElementById("numberCard").value;
-    //revisa si se completo el campo del formulario para la validación
+    //revisa si se completó el campo del formulario para la validación
     if (isNaN(creditCardNumber) || (creditCardNumber == "")) {
       document.getElementById("alertCard").innerHTML = "Debe ingresar un número";
       document.getElementById("numberCard").value ="";
@@ -18,6 +18,7 @@ function myFunction() {
               document.getElementById("alertCard").style.color = "red";
               document.getElementById("alertCard").innerHTML = "Tarjeta de Crédito Invalida";
             }
+            //enmascara numeros de la tarjeta
             let resultado = validator.maskify (creditCardNumber);
             document.getElementById("numberCard").value = resultado;
     }
