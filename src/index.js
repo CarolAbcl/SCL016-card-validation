@@ -12,11 +12,11 @@ function myFunction() {
             let validacion = validator.isValid (creditCardNumber);
             if (validacion == true){
               document.getElementById("alertCard").style.color = "#2EA033";
-              document.getElementById("alertCard").innerHTML = "Tarjeta de Crédito Valida";
+              document.getElementById("alertCard").innerHTML = "Tarjeta de Crédito Válida";
             }
             else{
               document.getElementById("alertCard").style.color = "red";
-              document.getElementById("alertCard").innerHTML = "Tarjeta de Crédito Invalida";
+              document.getElementById("alertCard").innerHTML = "Tarjeta de Crédito Inválida";
             }
             //enmascara numeros de la tarjeta
             let resultado = validator.maskify (creditCardNumber);

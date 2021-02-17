@@ -22,6 +22,9 @@ import validator from '../src/validator';
     it('debería retornar false para "1234567890"', () => {
       expect(validator.isValid('1234567890')).toBe(false)
     });
+    it('debería retornar false para "0000000000000000"', () => {
+      expect(validator.isValid('000000000000000000')).toBe(false)
+    });
   });
 
   describe('Pruebas para validator.maskify', () => {
