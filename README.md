@@ -42,5 +42,3 @@ Screenshot final del proyecto:
 Enlace a presentación del demo en loom:
 
 [Enlace Loom](https://www.loom.com/share/63d1a026968a4dbd9c443d42c5e46f9b)
-
-[Enlace Repositorio](https://github.com/CarolAbcl/SCL016-card-validation)
