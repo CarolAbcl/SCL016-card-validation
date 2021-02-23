@@ -1,1 +1,81 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario Suscripción</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TryBank</h1>
+    </header>
+    <div class="containerTitle">
+          <p>INSTRUCCIONES DE PAGO AUTOMATICO</p>
+          <p>CON TARJETAS DE CRÉDITO (PAT)</p>
+    </div>
+    <div class="triangle"></div>
+    <div class="start">
+      <label for="start">Fecha Otorgamiento Instrucción de Cargo:</label>
+      <input type="date" id="start" name="card-start">
+    </div>
+    <div class="clearfix"></div>
+    <main>
+    <form>
+    <label for="name">Nombre del Titular:</label>
+    <input type="text" placeholder="Tu nombre"><br>
+    <label for="adress">Dirección:</label>
+    <input type="text" placeholder="Tu dirección"><br>
+    <label for="rut">Cédula de Identidad:</label>
+    <input type="text" placeholder="Tu cédula de identidad"><br>
+    <label for="phone">Teléfono:</label>
+    <input type="text" placeholder="Tu teléfono"><br>
+    <label for="card">Tarjeta de Crédito:</label>
+    <!-- listado de tarjetas -->
+    <input type="radio" id="Mastercard" name="Tarjeta">
+    <label class="selectCard" for="Martercard">Mastercard</label>
+    <input type="radio" id="Visa" name="Tarjeta">
+    <label class="selectCard" for="Visa">Visa</label>
+    <input type="radio" id="Magna" name="Tarjeta">
+    <label class="selectCard" for="Magna">Magna</label>
+    <input type="radio" id="American" name="Tarjeta">
+    <label class="selectCard" for="American">American Express</label>
+    <input type="radio" id="other" name="Tarjeta">
+    <label class="selectCard" for="other">Otra</label><br>
+    <!--input a validar-->
+    <label for="numberCard">Numero de Tarjeta:</label>
+    <input type="text" id="numberCard" required>
+    <p id="alertCard"></p>
+    <!--fin validación-->
+    <label>Vencimiento Tarjeta:</label>
+    <label class="selectCard" for="monthE">Mes:</label>
+    <input type="number"> 
+    <label class="selectCard" for="yearE">Año:</label>
+    <input type="number"><br><br>
+    <label>Monto de Cargo Mensual:</label>
+    <span id="price">$9.990</span><br>
+    <div class="copyright">
+    <input type="checkbox" id="agree" name="agree" required>
+    <label id="agreeline" for="agree">He leido los <a href="term_conditions.html">términos y condiciones</a> y acepto los cargos a realizar.</label><br>
+    <button type="submit" id="buttonSubmit">ENVIAR</button> 
+    <!--<input id="buttonSubmit" type="button">-->  
+  </div>
+  </form>
+</main>
+    <footer>
+      <div class="footerone">
+        <h1>TryBank</h1>  
+      </div>
+      <div class="footertwo">
+        <h3>Sobre TryBank</h3>
+        <h3>Ver Productos</h3>
+        <h3>Contacto</h3>
+      </div>
+      <div class="clearfix"></div>
+      <div class="copyright">
+        <br>
+        <p>Sitio creado por TryBank, todos los derechos reservados</p>
+      </div>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html
